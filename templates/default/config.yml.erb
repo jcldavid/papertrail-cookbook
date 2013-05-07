@@ -1,0 +1,5 @@
+files:
+  - <%= node[:papertrail][:files].join "\n  - " %>
+destination:
+  host: logs.papertrailapp.com
+  port: <%= node[:papertrail][:port] %>
